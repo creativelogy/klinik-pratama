@@ -183,6 +183,13 @@
 	height: 23px;
 }
 .row .table thead tr th{
+	text-align: center;
+	vertical-align: middle;
+	text-align: center
+}
+
+.row .table tbody tr th{
+	text-align: center;
 	vertical-align: middle;
 	text-align: center
 }
