@@ -15,7 +15,8 @@ class CreateTindakanTable extends Migration
     {
         Schema::create('tindakan', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('id_tindakan')->unique();
+            $table->unsignedBigInteger('id_tindakan');
+            $table -> foreign('id_tindakan')->references('id')->on('ref_tindakan')->onDelete('cascade');
             $table->bigInteger('harga');
             $table->bigInteger('jml');
             $table->string('created_by');

@@ -15,7 +15,8 @@ class CreateObatTable extends Migration
     {
         Schema::create('obat', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('id_obat')->unique();
+            $table->unsignedBigInteger('id_obat');
+            $table -> foreign('id_obat')->references('id')->on('ref_obat')->onDelete('cascade');
             $table->bigInteger('harga');
             $table->bigInteger('jml');
             $table->string('created_by');

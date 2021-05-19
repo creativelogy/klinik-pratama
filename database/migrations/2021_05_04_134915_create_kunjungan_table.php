@@ -24,11 +24,11 @@ class CreateKunjunganTable extends Migration
             $table->string('edited_by');
             $table->timestamps();
 
-            $table->unsignedBigInteger('id_reservasi');
+            $table->unsignedBigInteger('id_reservasi')-> nullable();
             $table->unsignedBigInteger('id_pasien');
             $table->unsignedBigInteger('id_penyakit');
 
-            $table -> foreign('id_reservasi')->references('id')->on('reservasi')->onDelete('cascade');
+            $table -> foreign('id_reservasi')->references('id')->on('reservasi');
             $table -> foreign('id_pasien')->references('id')->on('pasien')->onDelete('cascade');
             $table -> foreign('id_penyakit')->references('id')->on('ref_penyakit_icd')->onDelete('cascade');
     
