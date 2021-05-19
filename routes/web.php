@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'App\Http\Controllers\PagesController@home');
 Route::get('/pasien', 'App\Http\Controllers\PasienController@index');
 Route::get('/perawat', 'App\Http\Controllers\PerawatController@index');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
