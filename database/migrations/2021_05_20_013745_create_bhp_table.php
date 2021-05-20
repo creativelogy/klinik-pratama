@@ -15,14 +15,14 @@ class CreateBhpTable extends Migration
     {
         Schema::create('bhp', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('id_bhp');
-            $table -> foreign('id_bhp')->references('id')->on('ref_bhp')->onDelete('cascade');
             $table->bigInteger('harga');
             $table->bigInteger('jml');
             $table->string('created_by');
             $table->string('edited_by');
             $table->timestamps();
-
+            
+            $table->unsignedBigInteger('id_bhp');
+            $table -> foreign('id_bhp')->references('id')->on('ref_bhp')->onDelete('cascade');
             
         });
     }

@@ -15,8 +15,7 @@ class CreateObatTable extends Migration
     {
         Schema::create('obat', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('id_obat');
-            $table -> foreign('id_obat')->references('id')->on('ref_obat')->onDelete('cascade');
+            
             $table->bigInteger('harga');
             $table->bigInteger('jml');
             $table->string('created_by');
@@ -24,7 +23,9 @@ class CreateObatTable extends Migration
             $table->timestamps();
 
             $table->string('id_periksa_poli');
-
+            $table->unsignedBigInteger('id_obat');
+            
+            $table -> foreign('id_obat')->references('id')->on('ref_obat')->onDelete('cascade');
             $table -> foreign('id_periksa_poli')->references('id_periksa')->on('kunjungan_poli')->onDelete('cascade');
         });
     }

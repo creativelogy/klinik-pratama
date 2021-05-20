@@ -24,7 +24,7 @@ class CreateKunjunganTable extends Migration
             $table->string('edited_by');
             $table->timestamps();
 
-            $table->unsignedBigInteger('id_reservasi')-> nullable();
+            $table->unsignedBigInteger('id_reservasi') -> nullable();
             $table->unsignedBigInteger('id_pasien');
             $table->unsignedBigInteger('id_penyakit');
 
