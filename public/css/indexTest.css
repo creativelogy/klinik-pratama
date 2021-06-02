@@ -1,0 +1,52 @@
+@charset "utf-8";
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+#stickynav {
+    box-shadow: 5px 1px 75px 5px rgba(0, 0, 0, 0.35);
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.home-background {
+    size: auto;
+    display: flex;
+    background-image: url("../img/home.png");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    font-family: poppins;
+}
+.titlehome {
+    font-weight: bold;
+    font-size: 23pt;
+}
+.poweredlogo {
+    width: 67%;
+    height: 67%;
+    margin-top: 20pt;
+}
+.buttonset {
+    float: right;
+}
+.login-btn {
+    color: white !important;
+    background-color: #009c9c !important;
+}
+.login-btn:hover {
+    background-color: white !important;
+    border: 1px solid #009c9c !important;
+    color: black !important;
+}
+.btn-bulat {
+}
