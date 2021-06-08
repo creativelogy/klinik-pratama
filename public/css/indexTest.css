@@ -48,5 +48,10 @@ body {
     border: 1px solid #009c9c !important;
     color: black !important;
 }
-.btn-bulat {
+.desc-powered {
+    font-size: 12pt;
+    margin-top: 5pt;
+}
+.desc-home {
+    font-size: 20px;
 }
