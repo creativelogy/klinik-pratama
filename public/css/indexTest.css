@@ -200,4 +200,12 @@ h1{
     margin-left: 1080px;
     font-style:italic;
 }
-
+.register a, .login a{
+    text-decoration:none;
+}
+.register a{
+    color:black;
+}
+.login a{
+    color:white;
+}
