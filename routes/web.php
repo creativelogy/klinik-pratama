@@ -17,6 +17,7 @@ Route::get('/', 'App\Http\Controllers\PagesController@homeTest');
 Route::get('/pasien', 'App\Http\Controllers\PasienController@index');
 Route::get('/perawat', 'App\Http\Controllers\PerawatController@index');
 Route::get('/homeTest', 'App\Http\Controllers\PagesController@homeTest');
+Route::get('/product', 'App\Http\Controllers\ProductController@homeTest');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
