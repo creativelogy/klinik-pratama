@@ -61,8 +61,8 @@
                         </ul>
                         </div>
                         <form class="d-flex button-set">
-                            <button class="btn mr-2 login-btn btn-bulat" style="border-radius: 50pt; width:85px;" type="submit">Login</button>
-                            <button class="btn btn-outline-dark btn-bulat" style="border:1px solid black; border-radius: 50pt; width:85px;" type="submit">Sign Up</button>
+                            <button class="btn mr-2 login-btn btn-bulat" style="border-radius: 50pt; width:90px; height:40px;" type="submit">Login</button>
+                            <button class="btn btn-outline-dark btn-bulat" style="border:1px solid black; border-radius: 50pt; width:90px; height:40px;" type="submit">Sign Up</button>
                         </form> 
                     </div>
         </nav>
