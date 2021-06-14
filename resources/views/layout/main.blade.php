@@ -49,7 +49,9 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">About</a>
+                                <a class="nav-link" aria-current="page" href="/about">About</a>
+
+
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" 
@@ -61,8 +63,8 @@
                         </ul>
                         </div>
                         <form class="d-flex button-set">
-                            <button class="btn mr-2 login-btn btn-bulat login" style="border-radius: 50pt; width:85px;" type="submit"><a href="/login">Login</a></button>
-                            <button class="btn btn-outline-dark btn-bulat register" style="border:1px solid black; border-radius: 50pt; width:85px;" type="submit"><a href="/register">Register</a></button>
+                            <button class="btn mr-2 login-btn btn-bulat login" style="border-radius: 50pt; width:90px; height:40px" type="submit"><a href="/login">Login</a></button>
+                            <button class="btn btn-outline-dark btn-bulat register" style="border:1px solid black; border-radius: 50pt; width:90px; height:40px" type="submit"><a href="/register">Register</a></button>
                         </form> 
                     </div>
         </nav>
