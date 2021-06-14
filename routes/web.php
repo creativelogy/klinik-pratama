@@ -20,6 +20,7 @@ Route::get('/homeTest', 'App\Http\Controllers\PagesController@homeTest');
 Route::get('/product', 'App\Http\Controllers\ProductController@homeTest');
 Route::get('/about', 'App\Http\Controllers\PagesController@about');
 Route::get('/ref_bhp', 'App\Http\Controllers\ref_bhpController@index');
+Route::get('/ref_obat', 'App\Http\Controllers\ref_obatController@index');
 
 
 Route::get('/dashboard', function () {

@@ -20,7 +20,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($ref_bhp as $prwt)
+                @foreach ($ref_obat as $prwt)
                 <tr>
                     <th scope="row">{{$loop-> iteration}}</th>
                     <td>{{$prwt-> nama}}</td>
