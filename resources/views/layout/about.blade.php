@@ -93,13 +93,13 @@
         <section id="our-team">
             <div class="container-12">
                 <div class="header">
-                    <h1>Our Team</h1>
+                    <h1 style="font-weight: bold; font-size: 45px;">Our Team</h1>
                 </div>
                 <div class="sub-container">
                     <div class="teams">
                         <img src="../img/alif-2.jpg" alt="alif" style="border-radius: 50%;">
                             <div class="name">Khalifah Imam Ali</div>
-                                <div class="desig">Creative Director</div>
+                                <div class="desig">Developer</div>
                             <div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in sunt 
                                 molestiae eligendi? Vel amet reiciendis quia maxime? Accusantium </div>
                                 <div class="social-links">
@@ -110,9 +110,9 @@
                                 </div>
                     </div>
                     <div class="teams">
-                        <img src="../img/gesti-2.jpg" alt="gesti" style="border-radius: 50%;">
-                        <div class="name">Gestina Ratna Pratiwi</div>
-                        <div class="desig">Frontend Developer</div>
+                        <img src="../img/ghoza.jpg" alt="gesti" style="border-radius: 50%;">
+                        <div class="name">Ghoza Nada Iqbal</div>
+                        <div class="desig">Developer</div>
                         <div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in sunt 
                         molestiae eligendi? Vel amet reiciendis quia maxime? Accusantium </div>
                         <div class="social-links">
@@ -125,7 +125,33 @@
                     <div class="teams">
                             <img src="../img/syahrul-3.jpg" alt="syahrul" style="border-radius: 50%;">
                             <div class="name">Muhammad Syahrul Aulia</div>
-                            <div class="desig">Backend Developer</div>
+                            <div class="desig">Developer</div>
+                            <div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in sunt 
+                            molestiae eligendi? Vel amet reiciendis quia maxime? Accusantium </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/muhammad-syahrul-aulia-1619291a9/"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://instagram.com/syahrolus"><i class="fa fa-instagram"></i></a>
+                            <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                            <a href="https://github.com/syahrolus"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="teams">
+                            <img src="../img/erik.jpg" alt="syahrul" style="border-radius: 50%;">
+                            <div class="name">Erikson Vri Aritonang</div>
+                            <div class="desig">Developer</div>
+                            <div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in sunt 
+                            molestiae eligendi? Vel amet reiciendis quia maxime? Accusantium </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/muhammad-syahrul-aulia-1619291a9/"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://instagram.com/syahrolus"><i class="fa fa-instagram"></i></a>
+                            <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                            <a href="https://github.com/syahrolus"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="teams">
+                            <img src="../img/krisna.jpg" alt="syahrul" style="border-radius: 50%;">
+                            <div class="name">Krisna Sanjaya</div>
+                            <div class="desig">Developer</div>
                             <div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in sunt 
                             molestiae eligendi? Vel amet reiciendis quia maxime? Accusantium </div>
                         <div class="social-links">
@@ -138,8 +164,8 @@
                 </div>
             </div>
         </section>
-        <h1>sda</h1>
-        <h3>2as</h3>
+        <h1>tes</h1>
+        <h3>tes</h3>
         <!-- MAPS -->
         
     <!-- Optional JavaScript -->
