@@ -13,6 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <div id="stickynav">
@@ -164,8 +166,68 @@
                 </div>
             </div>
         </section>
-        <h1>tes</h1>
-        <h3>tes</h3>
+        <!-- <section class="footers text-light pt-2 pb-5" style="background-color: rgb(31, 31, 31);">
+            <div class="container pt-5">
+                <div class="row">
+                   
+                    <div class="col-xs-12 col-sm-6 col-md-4 footers-one">
+                       <div class="footers-logo">
+                           <img src="Assets/navigo-logo-white.png" alt="Logo" style="width:140px;">
+                       </div>
+                       <div class="footers-info mt-3">
+                           <p>a navigation to your dream tour, explore and discover more experiences to be come true.</p>
+                       </div>
+                       <div class="social-icons"> 
+                         <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+                         <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a>
+                        <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-2x social"></i></a>
+                        <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
+                    </div>
+                   </div>
+                   <div class="col-xs-12 col-sm-6 col-md-2 footers-two" style="color: white;">
+                       <h5>Home </h5>
+                       <ul class="list-unstyled">
+                       <li><a href="#home-intro">Home</a></li>
+                       <li><a href="#vt">Virtual tour</a></li>
+                       <li><a href="#galeri-id">Gallery</a></li>
+                       <li><a href="#article-id">Articles</a></li>
+                       <li><a href="#client-id">Testimony</a></li>
+                      </ul>
+                   </div>
+                   <div class="col-xs-12 col-sm-6 col-md-2 footers-three">
+                       <h5>About Us </h5>
+                       <ul class="list-unstyled">
+                        <li><a href="About Us.html#abt-us">About</a></li>
+                        <li><a href="About Us.html#our-team">Our Team</a></li>
+                      </ul>
+                   </div>
+                   <div class="col-xs-12 col-sm-6 col-md-2 footers-four">
+                       <h5>Tourism Places </h5>
+                       <ul class="list-unstyled">
+                       <li><a href="Paket-Wisata.html">Nature</a></li>
+                       <li><a href="Paket-Wisata.html">Adventure</a></li>
+                       <li><a href="Paket-Wisata.html">Culture</a></li>
+                       <li><a href="Paket-Wisata.html">Photography</a></li>
+                      </ul>
+                   </div>
+                   <div class="col-xs-12 col-sm-6 col-md-2 footers-five">
+                       <h5>Contact </h5>
+                       <ul class="list-unstyled">
+                        <li><a href="https://api.whatsapp.com/send/?phone=628977887994&text=I+am+interested+in+the+tour+packages+that+Navigo+offers&app_absent=0" target="_blank">Whatsapp</a></li>
+                      </ul>
+                   </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="copyright border">
+             <div class="container">
+                 <div class="row text-center">
+                     <div class="col-md-12 pt-3">
+                         <p class="text-muted">© 2021 Klinik Pratama Tugas Besar PemWeb</p>
+                     </div>
+                 </div>
+             </div>
+         </section>
         <!-- MAPS -->
         
     <!-- Optional JavaScript -->
