@@ -3,33 +3,92 @@
 @section('title', 'BHP')
     <link rel="stylesheet" type="text/css" href="../css/ref_bhp.css">
 @section('container')
-    <div class="container">
-        <div class="row">
-            <div class="col-12"><br><br><br><br>
-                <h1 class="mt-3">List</h1>
-                <table class="table">
 
-                    <tbody>
-                        @foreach ($ref_bhp as $prwt)
-                            <tr>
-                                {{-- <th scope="row">{{$loop-> iteration}}</th> --}}
-                                <div class="border">
-                                    <td><img src="{{ $prwt->img_dir }}" class="isi catalog"> <br>
-                                        <div class="name">
-                                            {{ $prwt->nama }} <br><br>
-                                        </div>
-                                        {{-- <div class="harga">
-                                            {{ $prwt->harga }}
-                                        </div> --}}
-                                    </td>
-                                </div>
+    {{-- @foreach ($ref_bhp as $isi)
+        <div class="line">
+            <img src="{{$isi -> img_dir}}" alt="1" class="content">
+            <div class="name">
+                <p>{{$isi -> nama}}</p> <br>
+                <p>{{$isi -> harga}}</p>
             </div>
-            </tr>
-            @endforeach
-            </tbody>
-            </table>
+        </div>
+    @endforeach --}}
+
+    <div class="title">
+        <p>BHP</p>
+    </div>
+    
+    <div class="line">
+        <div class="content">
+        <img src="" alt="1" class="content">
+        <div class="name">
+            <p>Nama</p> <br>
+            <p>Harga</p>
         </div>
     </div>
+
+    <div class="line2">
+        <div class="content">
+        <img src="" alt="1" class="content">
+        <div class="name">
+            <p>Nama</p> <br>
+            <p>Harga</p>
+        </div>
+    </div>
+
+    <div class="line3">
+        <div class="content">
+        <img src="" alt="1" class="content">
+        <div class="name">
+            <p>Nama</p> <br>
+            <p>Harga</p>
+        </div>
+    </div>
+
+    <div class="line4">
+        <div class="content">
+        <img src="" alt="1" class="content">
+        <div class="name">
+            <p>Nama</p> <br>
+            <p>Harga</p>
+        </div>
+    </div>
+
+    <div class="line5">
+        <div class="content">
+        <img src="" alt="1" class="content">
+        <div class="name">
+            <p>Nama</p> <br>
+            <p>Harga</p>
+        </div>
+    </div>
+
+    <div class="line6">
+        <div class="content">
+        <img src="" alt="1" class="content">
+        <div class="name">
+            <p>Nama</p> <br>
+            <p>Harga</p>
+        </div>
+    </div>
+
+
+
+    {{-- @foreach ($ref_bhp as $prwt)
+<tr>
+    <th scope="row">{{$loop-> iteration}}</th>
+    <td>{{$prwt-> nama}}</td>
+    <td>{{$prwt-> harga}}</td>
+    <td>{{$prwt-> created_by}}</td>
+    <td>{{$prwt-> edited_by}}</td>
+    <td>{{$prwt-> created_at}}</td>
+    <td>{{$prwt-> updated_at}}</td>
+</tr>
+@endforeach --}}
+
+
+
+
     {{-- <tbody>
     @foreach ($ref_bhp as $prwt)
     {{$loop-> iteration}}
@@ -41,5 +100,5 @@
 
 
 
-    </div>
+
 @endsection
