@@ -118,10 +118,10 @@
                         <div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in sunt 
                         molestiae eligendi? Vel amet reiciendis quia maxime? Accusantium </div>
                         <div class="social-links">
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="https://instagram.com/gestinapratiwi"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ghoza-nada-iqbal/"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://instagram.com/ghozzza"><i class="fa fa-instagram"></i></a>
                             <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
+                            <a href="https://github.com/ghozzza"><i class="fa fa-github"></i></a>
                         </div>
                     </div>
                     <div class="teams">
