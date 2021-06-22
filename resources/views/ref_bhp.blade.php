@@ -1,6 +1,6 @@
 @extends('layout/main')
 
-@section('title', 'BHP')
+@section('title', 'Medicine')
     <link rel="stylesheet" type="text/css" href="../css/ref_bhp.css">
 @section('container')
 
@@ -18,6 +18,8 @@
         <p>BHP</p>
     </div>
     @foreach ($ref_bhp as $isi)
+
+    @if ($isi -> id == 1)
     <div class="line">
         <div class="content">
         <img src="{{$isi -> img_dir}}" alt="1" class="content">
@@ -27,50 +29,57 @@
         </div>
     </div>
 
+    @elseif ($isi -> id == 2)
     <div class="line2">
         <div class="content">
-        <img src="{{$isi -> img_dir}}" alt="1" class="content">
+        <img src="{{$isi -> img_dir}}" alt="2" class="content">
         <div class="name">
             <p>{{$isi -> nama}}</p> <br>
             <p>{{$isi -> harga}}</p>
         </div>
     </div>
 
+    @elseif ($isi -> id == 3)
     <div class="line3">
         <div class="content">
-        <img src="{{$isi -> img_dir}}" alt="1" class="content">
+        <img src="{{$isi -> img_dir}}" alt="3" class="content">
         <div class="name">
             <p>{{$isi -> nama}}</p> <br>
             <p>{{$isi -> harga}}</p>
         </div>
     </div>
 
+    @elseif ($isi -> id == 4)
     <div class="line4">
         <div class="content">
-        <img src="{{$isi -> img_dir}}" alt="1" class="content">
+        <img src="{{$isi -> img_dir}}" alt="4" class="content">
         <div class="name">
             <p>{{$isi -> nama}}</p> <br>
             <p>{{$isi -> harga}}</p>
         </div>
     </div>
 
+    @elseif ($isi -> id == 5)
     <div class="line5">
         <div class="content">
-        <img src="{{$isi -> img_dir}}" alt="1" class="content">
+        <img src="{{$isi -> img_dir}}" alt="5" class="content">
         <div class="name">
             <p>{{$isi -> nama}}</p> <br>
             <p>{{$isi -> harga}}</p>
         </div>
     </div>
 
+    @elseif ($isi -> id == 6)
     <div class="line6">
         <div class="content">
-        <img src="{{$isi -> img_dir}}" alt="1" class="content">
+        <img src="{{$isi -> img_dir}}" alt="6" class="content">
         <div class="name">
             <p>{{$isi -> nama}}</p> <br>
             <p>{{$isi -> harga}}</p>
         </div>
     </div>
+
+    @endif
     @endforeach
 
 
@@ -103,3 +112,12 @@
 
 
 @endsection
+<section class="copyright border">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12 pt-3">
+                <p class="text-muted">© 2021 Klinik Pratama Tugas Besar PemWeb</p>
+            </div>
+        </div>
+    </div>
+</section>
