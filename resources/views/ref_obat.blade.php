@@ -1,39 +1,76 @@
 @extends('layout/main')
 
-@section('title','BHP')
-
+@section('title', 'Medicine')
+    <link rel="stylesheet" type="text/css" href="../css/ref_bhp.css">
 @section('container')
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-         <h1 class="mt-3">List</h1>
-         <table class="table">
-            <thead class="table-dark">
-                <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Nama</th>
-                <th scope="col">Harga</th>
-                <th scope="col">Created By</th>
-                <th scope="col">Edited By</th>
-                <th scope="col">Created At</th>
-                <th scope="col">Updated At</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($ref_obat as $prwt)
-                <tr>
-                    <th scope="row">{{$loop-> iteration}}</th>
-                    <td>{{$prwt-> nama}}</td>
-                    <td>{{$prwt-> harga}}</td>
-                    <td>{{$prwt-> created_by}}</td>
-                    <td>{{$prwt-> edited_by}}</td>
-                    <td>{{$prwt-> created_at}}</td>
-                    <td>{{$prwt-> updated_at}}</td>
-                </tr>
-                @endforeach
-            </tbody>
-         </table>
-        </div>
+
+    <div class="title">
+        <p>Medicine</p>
     </div>
-</div>
+
+    @foreach ($ref_obat as $isi)
+        @if ($isi->id == 1)
+            <div class="line">
+                <div class="content">
+                    <img src="{{ $isi->obat_img }}" alt="1" class="content">
+                    <div class="name">
+                        <p>{{ $isi->nama }}</p> <br>
+                        <p>{{ $isi->harga }}</p>
+                    </div>
+                </div>
+
+            @elseif ($isi -> id == 2)
+                <div class="line2">
+                    <div class="content">
+                        <img src="{{ $isi->obat_img }}" alt="2" class="content">
+                        <div class="name">
+                            <p>{{ $isi->nama }}</p> <br>
+                            <p>{{ $isi->harga }}</p>
+                        </div>
+                    </div>
+
+                @elseif ($isi -> id == 3)
+                    <div class="line3">
+                        <div class="content">
+                            <img src="{{ $isi->obat_img }}" alt="3" class="content">
+                            <div class="name">
+                                <p>{{ $isi->nama }}</p> <br>
+                                <p>{{ $isi->harga }}</p>
+                            </div>
+                        </div>
+
+                    @elseif ($isi -> id == 4)
+                        <div class="line4">
+                            <div class="content">
+                                <img src="{{ $isi->obat_img }}" alt="4" class="content">
+                                <div class="name">
+                                    <p>{{ $isi->nama }}</p> <br>
+                                    <p>{{ $isi->harga }}</p>
+                                </div>
+                            </div>
+
+                        @elseif ($isi -> id == 5)
+                            <div class="line5">
+                                <div class="content">
+                                    <img src="{{ $isi->obat_img }}" alt="5" class="content">
+                                    <div class="name">
+                                        <p>{{ $isi->nama }}</p> <br>
+                                        <p>{{ $isi->harga }}</p>
+                                    </div>
+                                </div>
+
+                            @elseif ($isi -> id == 6)
+                                <div class="line6">
+                                    <div class="content">
+                                        <img src="{{ $isi->obat_img }}" alt="6" class="content">
+                                        <div class="name">
+                                            <p>{{ $isi->nama }}</p> <br>
+                                            <p>{{ $isi->harga }}</p>
+                                        </div>
+                                    </div>
+
+        @endif
+    @endforeach
+
 @endsection
+

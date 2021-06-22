@@ -15,7 +15,7 @@
 
 <div class="butmedicine">
     <div class="linktext">
-        <a href="#"><p>Medicine</p></a>
+        <a href="ref_obat"><p>Medicine</p></a>
     </div>
 </div>
 
@@ -25,7 +25,7 @@
 
 <div class="butbhp">
     <div class="linktext2">
-        <a href="#"><p>BHP</p></a>
+        <a href="ref_bhp"><p>BHP</p></a>
     </div>
 </div>
 
