@@ -73,7 +73,7 @@
         <div class="about-background">
             <div class="main-text">
                 <h1 class="text-left font-weight-bold about-headline">About Us</h1>
-                <p class="text-left about-desc" style="margin-top:30px;">
+                <p class="text-left about-desc" style="margin-top:20px;">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam 
                     <br>malesuada, ante nec sagittis dapibus, augue turpis porttitor justo, 
                     <br>quis mattis justo tortor nec odio. Sed nec massa iaculis, elementum 
@@ -81,7 +81,7 @@
                     <br>natoque penatibus et magnis dis parturient montes, nascetur.</p>
                     <br>
                 <h3 class="text-left font-weight-bold text-count">3792<span class="tab2"></span>12.293<span class="tab3"></span>24/7</h3>
-                <p class="text-left">Happy Patients<span class="tab1"></span>Performed Treatment<span class="tab1"></span>Open Clinic</p>
+                <p class="text-left text-count-desc">Happy Patients<span class="tab1"></span>Performed Treatment<span class="tab1"></span>Open Clinic</p>
             </div>
         </div>
         <div class="label1">

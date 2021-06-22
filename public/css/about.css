@@ -24,27 +24,40 @@ body {
 }
 .about-background {
     background-image: url("../img/about-head.png");
-    size: auto;
     display: flex;
+    background-size: cover;
     width: 100%;
     height: 80vh;
     padding-top: 100px;
 }
+.about-headline {
+    font-size: 17pt;
+}
+.about-desc {
+    font-size: 10pt;
+}
+.text-count {
+    font-size: 15pt;
+    margin-top: -10px;
+}
+.text-count-desc {
+    font-size: 10.5pt;
+}
 .main-text {
     margin-left: 55%;
-    margin-top: 8%;
+    margin-top: 5%;
 }
 .tab1 {
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 .tab2 {
     display: inline-block;
-    margin-left: 92px;
+    margin-left: 70px;
 }
 .tab3 {
     display: inline-block;
-    margin-left: 120px;
+    margin-left: 93px;
 }
 .text-count {
     color: #0ca0a0;
@@ -75,11 +88,11 @@ body {
 /* Label 1 */
 .label1 {
     background-image: url("../img/about3.png");
-    size: auto;
+    background-size: cover;
     display: flex;
-    width: 100%;
-    min-height: 100%;
-    padding: 100px;
+    width: 100vw;
+    height: 10vh;
+    padding: 80px;
 }
 .reserve-button {
     float: right;
@@ -100,7 +113,7 @@ body {
 }
 
 .sub-container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
     padding: 48px 0;
     display: flex;
@@ -110,7 +123,7 @@ body {
 
 .teams {
     margin: 10px;
-    padding: 22px;
+    padding: 20px;
     max-width: 30%;
     cursor: pointer;
     transition: 0.4s;
@@ -235,4 +248,67 @@ input {
 button:hover {
     color: #1565c0 !important;
     background-color: #fff;
+}
+
+@media only screen and (min-width: 1080px) {
+    .about-headline {
+        font-size: 30pt;
+    }
+    .about-desc {
+        font-size: 14pt;
+    }
+    .text-count {
+        font-size: 22pt;
+        margin-top: -10px;
+    }
+    .text-count-desc {
+        font-size: 13pt;
+    }
+    .main-text {
+        margin-left: 55%;
+        margin-top: 8%;
+    }
+    .tab1 {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .tab2 {
+        display: inline-block;
+        margin-left: 70px;
+    }
+    .tab3 {
+        display: inline-block;
+        margin-left: 97px;
+    }
+    .label1 {
+        background-image: url("../img/about3.png");
+        background-size: cover;
+        display: flex;
+        width: 100vw;
+        height: 25vh;
+        padding: 100px;
+    }
+    .reserve-button {
+        float: right;
+        margin-top: 10px;
+        margin-left: 1460px;
+    }
+
+    .sub-container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 48px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .teams {
+        margin: 10px;
+        padding: 22px;
+        max-width: 30%;
+        cursor: pointer;
+        transition: 0.4s;
+        box-sizing: border-box;
+    }
 }
