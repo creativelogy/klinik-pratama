@@ -13,64 +13,65 @@
             </div>
         </div>
     @endforeach --}}
-
+    
     <div class="title">
         <p>BHP</p>
     </div>
-    
+    @foreach ($ref_bhp as $isi)
     <div class="line">
         <div class="content">
-        <img src="" alt="1" class="content">
+        <img src="{{$isi -> img_dir}}" alt="1" class="content">
         <div class="name">
-            <p>Nama</p> <br>
-            <p>Harga</p>
+            <p>{{$isi -> nama}}</p> <br>
+            <p>{{$isi -> harga}}</p>
         </div>
     </div>
 
     <div class="line2">
         <div class="content">
-        <img src="" alt="1" class="content">
+        <img src="{{$isi -> img_dir}}" alt="1" class="content">
         <div class="name">
-            <p>Nama</p> <br>
-            <p>Harga</p>
+            <p>{{$isi -> nama}}</p> <br>
+            <p>{{$isi -> harga}}</p>
         </div>
     </div>
 
     <div class="line3">
         <div class="content">
-        <img src="" alt="1" class="content">
+        <img src="{{$isi -> img_dir}}" alt="1" class="content">
         <div class="name">
-            <p>Nama</p> <br>
-            <p>Harga</p>
+            <p>{{$isi -> nama}}</p> <br>
+            <p>{{$isi -> harga}}</p>
         </div>
     </div>
 
     <div class="line4">
         <div class="content">
-        <img src="" alt="1" class="content">
+        <img src="{{$isi -> img_dir}}" alt="1" class="content">
         <div class="name">
-            <p>Nama</p> <br>
-            <p>Harga</p>
+            <p>{{$isi -> nama}}</p> <br>
+            <p>{{$isi -> harga}}</p>
         </div>
     </div>
 
     <div class="line5">
         <div class="content">
-        <img src="" alt="1" class="content">
+        <img src="{{$isi -> img_dir}}" alt="1" class="content">
         <div class="name">
-            <p>Nama</p> <br>
-            <p>Harga</p>
+            <p>{{$isi -> nama}}</p> <br>
+            <p>{{$isi -> harga}}</p>
         </div>
     </div>
 
     <div class="line6">
         <div class="content">
-        <img src="" alt="1" class="content">
+        <img src="{{$isi -> img_dir}}" alt="1" class="content">
         <div class="name">
-            <p>Nama</p> <br>
-            <p>Harga</p>
+            <p>{{$isi -> nama}}</p> <br>
+            <p>{{$isi -> harga}}</p>
         </div>
     </div>
+    @endforeach
 
 
 
