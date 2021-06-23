@@ -249,8 +249,132 @@ button:hover {
     color: #1565c0 !important;
     background-color: #fff;
 }
+@media only screen and (min-width: 720px) {
+    .about-headline {
+        font-size: 20pt;
+    }
+    .about-desc {
+        font-size: 11pt;
+    }
+    .text-count {
+        font-size: 20pt;
+        margin-top: -10px;
+    }
+    .text-count-desc {
+        font-size: 11pt;
+    }
+    .main-text {
+        margin-left: 55%;
+        margin-top: 6%;
+    }
+    .tab1 {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .tab2 {
+        display: inline-block;
+        margin-left: 60px;
+    }
+    .tab3 {
+        display: inline-block;
+        margin-left: 80px;
+    }
+    .label1 {
+        background-image: url("../img/about3.png");
+        background-size: cover;
+        display: flex;
+        width: 100vw;
+        height: 25vh;
+        padding: 100px;
+    }
+    .reserve-button {
+        float: right;
+        margin-top: -20px;
+        margin-left: 1100px;
+    }
 
-@media only screen and (min-width: 1080px) {
+    .sub-container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 48px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .teams {
+        margin: 10px;
+        padding: 22px;
+        max-width: 30%;
+        cursor: pointer;
+        transition: 0.4s;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .about-headline {
+        font-size: 30pt;
+    }
+    .about-desc {
+        font-size: 14pt;
+    }
+    .text-count {
+        font-size: 22pt;
+        margin-top: -10px;
+    }
+    .text-count-desc {
+        font-size: 13pt;
+    }
+    .main-text {
+        margin-left: 55%;
+        margin-top: 8%;
+    }
+    .tab1 {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .tab2 {
+        display: inline-block;
+        margin-left: 70px;
+    }
+    .tab3 {
+        display: inline-block;
+        margin-left: 97px;
+    }
+    .label1 {
+        background-image: url("../img/about3.png");
+        background-size: cover;
+        display: flex;
+        width: 100vw;
+        height: 25vh;
+        padding: 100px;
+    }
+    .reserve-button {
+        float: right;
+        margin-top: -20px;
+        margin-left: 1260px;
+    }
+
+    .sub-container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 48px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .teams {
+        margin: 10px;
+        padding: 22px;
+        max-width: 30%;
+        cursor: pointer;
+        transition: 0.4s;
+        box-sizing: border-box;
+    }
+}
+@media only screen and (min-width: 1800px) {
     .about-headline {
         font-size: 30pt;
     }
