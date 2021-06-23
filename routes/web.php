@@ -22,8 +22,6 @@ Route::get('/about', 'App\Http\Controllers\PagesController@about');
 Route::get('/ref_bhp', 'App\Http\Controllers\ref_bhpController@index');
 Route::get('/ref_obat', 'App\Http\Controllers\ref_obatController@index');
 
-
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
