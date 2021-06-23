@@ -41,6 +41,7 @@
                             <a class="nav-link dropdown-toggle" href="{{ url('/product') }}" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Products
+                   
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="#">Action</a>
@@ -64,6 +65,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
+
                                 href="https://api.whatsapp.com/send?phone=628977887994&text=Saya%20ingin%20melakukan%20reservasi%20di%20Klinik%20Pratama!"
                                 target="_blank">
                                 Contact

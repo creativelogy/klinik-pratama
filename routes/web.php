@@ -21,11 +21,14 @@ Route::get('/product', 'App\Http\Controllers\ProductController@homeTest');
 Route::get('/about', 'App\Http\Controllers\PagesController@about');
 Route::get('/ref_bhp', 'App\Http\Controllers\ref_bhpController@index');
 Route::get('/ref_obat', 'App\Http\Controllers\ref_obatController@index');
+Route::get('/reservasi', 'App\Http\Controllers\reservasiController@index');
 
+Route::resource('reservasi', 'App\Http\Controllers\reservasiController');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+require __DIR__.'/auth.php';
 Route::middleware('role:pasien|super-admin')->get('/user/pasien', function() {
     return redirect(url('/'));
 })->name('user/pasien');
