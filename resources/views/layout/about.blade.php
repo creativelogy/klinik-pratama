@@ -32,7 +32,7 @@
                                 <a class="nav-link active" aria-current="page" href="/">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="/product" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Products
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -40,15 +40,8 @@
                                     <a class="dropdown-item" href="/ref_bhp">BHP</a>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                                    Services
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/reservasi">Services</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="/about">About</a>
@@ -62,13 +55,27 @@
                             </li>
                         </ul>
                         </div>
-                        <form class="d-flex button-set">
-                            <button class="btn mr-2 login-btn btn-bulat login" style="border-radius: 50pt; width:90px; height:40px" type="submit"><a href="/login">Login</a></button>
-                            <button class="btn btn-outline-dark btn-bulat register" style="border:1px solid black; border-radius: 50pt; width:90px; height:40px" type="submit"><a href="/register">Register</a></button>
-                        </form> 
+                        @guest
+                            <form class="d-flex button-set">
+                                <button class="btn mr-2 login-btn btn-bulat login"
+                                    style="border-radius: 50pt; width:90px; height:40px" type="submit"><a
+                                        href="/login">Login</a></button>
+                                <button class="btn btn-outline-dark btn-bulat register"
+                                    style="border:1px solid black; border-radius: 50pt; width:90px; height:40px" type="submit"><a
+                                        href="/register">Register</a></button>
+                            </form>
+                        @else
+                            <form id="logout-form" class="d-flex button-set" action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                <button class="btn btn-outline-dark btn-bulat register"
+                                    style="border:1px solid black; border-radius: 50pt; width:90px; height:40px" type="submit">
+                                    Logout
+                                </button>
+                            </form>
+                        @endguest
                     </div>
         </nav>
-
+    </div>
         <div class="about-background">
             <div class="main-text">
                 <h1 class="text-left font-weight-bold about-headline">About Us</h1>
