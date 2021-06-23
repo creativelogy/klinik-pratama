@@ -29,7 +29,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware('role:pasien|super-admin')->get('/user/pasien', function() {
-    return view('user.pasien.index');
+    return redirect(url('/'));
 })->name('user/pasien');
 Route::middleware('role:admin|super-admin')->get('/user/admin', function() {
     return view('user.admin.index');
@@ -40,3 +40,7 @@ Route::middleware('role:admin-poli|super-admin')->get('/user/adminpoli', functio
 Route::middleware('role:kasir|super-admin')->get('/user/kasir', function() {
     return view('user.kasir.index');
 })->name('user/kasir');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
