@@ -33,10 +33,6 @@ body {
 	margin-left: 125px;
 }
 
-.h4geser{
-    margin-left: -100px;
-}
-
 .tambah {
     position: absolute;
     width: 390px;
@@ -137,12 +133,4 @@ body {
 
 .linktext2 a {
     color: #ffffff;
-}
-
-.medgeser{
-    margin-left: 30px;
-}
-
-.bhpgeser{
-    margin-left: 30px;
 }
