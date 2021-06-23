@@ -39,13 +39,12 @@ class reservasiController extends Controller
     {
         //
 		DB::table('reservasi')->insert([
-		'id_pasien' => $request->pasien,
 		'no_telp' => $request->telp,
 		'tanggal_rencana_datang' => $request->tgl,
 		'id_dokter' => $request->codedoc,
 		'id_poli_bagian' => $request->codepol,
 		'status_pasien' => $request->status,
-		'created_by' => $request->date("Y-m-d H:i:s"),
+		'created_by' => $request->input,
 		'edited_by' => $request->input,
 		]);
 	// alihkan halaman ke halaman pegawai       
@@ -64,7 +63,7 @@ class reservasiController extends Controller
     {
         //
 		$reservasi = DB::table('reservasi')->get();
-		return view('reservasi.view', ['reservasi.view' => $reservasi]);
+		return view('reservasi.view', compact('reservasi'));
     }
 
     /**

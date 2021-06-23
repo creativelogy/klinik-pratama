@@ -26,7 +26,7 @@
 
 <div class="butlihat">
     <div class="linktext2">
-        <a href="#"><p>Lihat Jadwal</p></a>
+        <a href="reservasi/view"><p>Lihat Jadwal</p></a>
     </div>
 </div>
 

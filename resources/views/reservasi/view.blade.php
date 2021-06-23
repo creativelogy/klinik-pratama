@@ -6,11 +6,11 @@
 <div class="container">
         <div class="row">
             <div class="col-10">
-             <h1 class="mt-3">Daftar Perawat</h1>
+             <h1 class="mt-3">Daftar Reservasi</h1>
              <table class="table">
                 <thead class="table-dark">
                     <tr>
-                    <th scope="col">Id</th>
+                    <th scope="col">No</th>
                     <th scope="col">Tanggal Reservasi</th>
 					<th scope="col">Kode Poli</th>
                     <th scope="col">Kode Dokter</th>					
@@ -21,7 +21,7 @@
                     @foreach ($reservasi as $rsvs)
                     <tr>
                         <th scope="row">{{$loop-> iteration}}</th>
-                        <td>{{$rsvs-> nama}}</td>
+                        <td>{{$rsvs-> id_pasien}}</td>
                         <td>{{$rsvs-> tanggal_rencana_datang}}</td>
                         <td>{{$rsvs-> id_poli_bagian}}</td>
                         <td>{{$rsvs-> id_dokter}}</td>
