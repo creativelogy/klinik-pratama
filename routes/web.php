@@ -24,9 +24,24 @@ Route::get('/ref_obat', 'App\Http\Controllers\ref_obatController@index');
 Route::get('/reservasi', 'App\Http\Controllers\reservasiController@index');
 
 Route::resource('reservasi', 'App\Http\Controllers\reservasiController');
+Auth::routes();
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 require __DIR__.'/auth.php';
+Route::middleware('role:pasien|super-admin')->get('/user/pasien', function() {
+    return redirect(url('/'));
+})->name('user/pasien');
+Route::middleware('role:admin|super-admin')->get('/user/admin', function() {
+    return view('user.admin.index');
+})->name('user/admin');
+Route::middleware('role:admin-poli|super-admin')->get('/user/adminpoli', function() {
+    return view('user.admin_poli.index');
+})->name('user/adminpoli');
+Route::middleware('role:kasir|super-admin')->get('/user/kasir', function() {
+    return view('user.kasir.index');
+})->name('user/kasir');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
