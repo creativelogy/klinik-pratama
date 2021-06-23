@@ -14,7 +14,7 @@
                     <th scope="col">Tanggal Reservasi</th>
 					<th scope="col">Kode Poli</th>
                     <th scope="col">Kode Dokter</th>					
-                    <th scope="col">Created By</th>
+                    <th scope="col">Dibuat oleh</th>
                     </tr>
                 </thead>
                 <tbody>
