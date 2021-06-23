@@ -15,8 +15,7 @@ class reservasiController extends Controller
      */
     public function index()
     {
-        $reservasi = DB::table('reservasi')->get();
-        return view('reservasi', ['reservasi' => $reservasi]);
+        return view('reservasi');
     }
 
     /**
@@ -27,6 +26,7 @@ class reservasiController extends Controller
     public function create()
     {
         //
+		return view('reservasi.create');
     }
 
     /**
@@ -38,6 +38,20 @@ class reservasiController extends Controller
     public function store(Request $request)
     {
         //
+		DB::table('reservasi')->insert([
+		'id_pasien' => $request->pasien,
+		'no_telp' => $request->telp,
+		'tanggal_rencana_datang' => $request->tgl,
+		'id_dokter' => $request->codedoc,
+		'id_poli_bagian' => $request->codepol,
+		'status_pasien' => $request->status,
+		'created_by' => $request->date("Y-m-d H:i:s"),
+		'edited_by' => $request->input,
+		]);
+	// alihkan halaman ke halaman pegawai       
+		return redirect()->route('reservasi.index')
+			->with('success','Reservasi created successfully.');
+		
     }
 
     /**
@@ -49,6 +63,8 @@ class reservasiController extends Controller
     public function show($id)
     {
         //
+		$reservasi = DB::table('reservasi')->get();
+		return view('reservasi.view', ['reservasi.view' => $reservasi]);
     }
 
     /**

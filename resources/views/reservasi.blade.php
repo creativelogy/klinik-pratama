@@ -16,7 +16,7 @@
 
 <div class="buttambah">
     <div class="linktext">
-        <a href="#"><p>Tambah Jadwal</p></a>
+        <a href="reservasi/create"><p>Tambah Jadwal</p></a>
     </div>
 </div>
 

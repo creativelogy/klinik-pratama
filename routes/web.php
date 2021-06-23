@@ -23,6 +23,8 @@ Route::get('/ref_bhp', 'App\Http\Controllers\ref_bhpController@index');
 Route::get('/ref_obat', 'App\Http\Controllers\ref_obatController@index');
 Route::get('/reservasi', 'App\Http\Controllers\reservasiController@index');
 
+Route::resource('reservasi', 'App\Http\Controllers\reservasiController');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
