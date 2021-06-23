@@ -2,7 +2,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: poppins;
+    font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -68,7 +68,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 html,
@@ -213,11 +213,11 @@ h1 {
 }
 
 .toppage {
-    position: absolute;
+    /* position: absolute; */
     width: 650px;
     height: 59px;
     left: 709px;
-    top: 201px;
+    /* top: 201px; */
 
     font-family: Poppins;
     /* font-style: normal;
@@ -232,7 +232,7 @@ h1 {
 }
 
 .medicine {
-    position: absolute;
+    /* position: absolute; */
     width: 390px;
     height: 290px;
     left: 250px;
@@ -244,7 +244,7 @@ h1 {
 
 .butmedicine {
     /* Rectangle 6 */
-    position: absolute;
+    /* position: absolute; */
     width: 176px;
     height: 44px;
     left: 360px;
@@ -256,7 +256,7 @@ h1 {
 }
 
 .linktext {
-    position: absolute;
+    /* position: absolute; */
     width: 104px;
     height: 29px;
     left: 35px;
@@ -277,7 +277,7 @@ h1 {
 }
 
 .bhp {
-    position: absolute;
+    /* position: absolute; */
     width: 390px;
     height: 290px;
     left: 880px;
@@ -289,7 +289,7 @@ h1 {
 
 .butbhp {
     /* Rectangle 6 */
-    position: absolute;
+    /* position: absolute; */
     width: 176px;
     height: 44px;
     left: 1000px;
@@ -301,7 +301,7 @@ h1 {
 }
 
 .linktext2 {
-    position: absolute;
+    /* position: absolute; */
     width: 104px;
     height: 29px;
     left: 35px;
@@ -316,8 +316,6 @@ h1 {
 
     color: #ffffff;
 }
-
-
 
 .linktext2 a {
     color: #ffffff;
