@@ -51,11 +51,15 @@
             <p class="ibu">Ibu sahara</p>
             </div>
         </div> -->
-        <div class="mt-5">
-            <h2 class="text-center titlehome" style="margin-top:100px;">Powered By</h2>
-            <p class="text-center text-muted desc-powered">1000+ Trusted Medical Organization Throughout Indonesia</p>
-            <img class="rounded mx-auto d-block poweredlogo" src="../img/powered logo.png"  alt="">
-        </div>
+        <section class="copyright border">
+             <div class="container">
+                 <div class="row text-center">
+                     <div class="col-md-12 pt-3">
+                         <p class="text-muted">© 2021 Klinik Pratama Tugas Besar PemWeb</p>
+                     </div>
+                 </div>
+             </div>
+         </section>
         <!--text---------------->
 </div>
 <script>
