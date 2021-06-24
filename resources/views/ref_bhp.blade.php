@@ -1,6 +1,6 @@
 @extends('layout/main')
 
-@section('title', 'Medicine')
+@section('title', 'BHP')
     <link rel="stylesheet" type="text/css" href="../css/ref_bhp.css">
 @section('container')
 
