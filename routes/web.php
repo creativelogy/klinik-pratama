@@ -22,6 +22,9 @@ Route::get('/about', 'App\Http\Controllers\PagesController@about');
 Route::get('/ref_bhp', 'App\Http\Controllers\ref_bhpController@index');
 Route::get('/ref_obat', 'App\Http\Controllers\ref_obatController@index');
 Route::get('/reservasi', 'App\Http\Controllers\reservasiController@index');
+Route::get('/dokter', 'App\Http\Controllers\DokterController@index');
+Route::get('/poli', 'App\Http\Controllers\PoliController@index');
+Route::get('/reservasi/dokter', 'App\Http\Controllers\DokterController@index');
 
 Route::resource('reservasi', 'App\Http\Controllers\reservasiController');
 Auth::routes();

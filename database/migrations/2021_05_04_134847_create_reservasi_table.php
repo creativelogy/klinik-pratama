@@ -20,6 +20,7 @@ class CreateReservasiTable extends Migration
             $table->string('status_pasien');
             $table->string('created_by');
             $table->string('edited_by');
+			$table->string('keluhan');
             $table->timestamps();
 
             $table->unsignedBigInteger('id_pasien');

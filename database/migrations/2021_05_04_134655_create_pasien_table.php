@@ -15,18 +15,18 @@ class CreatePasienTable extends Migration
     {
         Schema::create('pasien', function (Blueprint $table) {
             $table -> bigIncrements('id');
-            $table -> string('no_rm');
+            $table -> string('no_rm')->nullable();
             $table -> string('nama');
             $table -> string('nik');
             $table -> string('alamat');
             $table -> string('tempat_lahir');
             $table -> date('tgl_lahir');
-            $table -> integer('rt');
-            $table -> integer('rw');
-            $table -> string('id_kelurahan');
-            $table -> string('id_kecamatan');
-            $table -> string('id_kabupaten');
-            $table -> string('id_provinsi');
+            $table -> integer('rt')-> nullable();
+            $table -> integer('rw')-> nullable();
+            $table -> string('id_kelurahan')-> nullable();
+            $table -> string('id_kecamatan')-> nullable();
+            $table -> string('id_kabupaten')->nullable();
+            $table -> string('id_provinsi')->nullable();
             $table -> string('id_user')->unique();
         });
     }

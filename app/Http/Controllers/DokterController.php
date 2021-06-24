@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class reservasiController extends Controller
+class DokterController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,9 @@ class reservasiController extends Controller
      */
     public function index()
     {
-        return view('reservasi');
+        //
+		$dokter = DB::table('dokter')->get();
+        return view('dokter', ['dokter' => $dokter]);
     }
 
     /**
@@ -26,7 +28,6 @@ class reservasiController extends Controller
     public function create()
     {
         //
-		return view('reservasi.create');
     }
 
     /**
@@ -38,25 +39,6 @@ class reservasiController extends Controller
     public function store(Request $request)
     {
         //
-		DB::table('pasien')->insert([
-		'nama' => $request->nama,
-		'nik' => $request->nik,
-		'alamat' => $request->alamat,
-		'tempat' => $request->tempat_lahir,
-		'tanggal' => $request->tanggal_lahir,
-		]);
-	
-		
-		DB::table('reservasi')->insert([
-		'no_telp' => $request->telp,
-		'tanggal_rencana_datang' => $request->tgl,
-		'id_dokter' => $request->codedoc,
-		'id_poli_bagian' => $request->codepol,
-		'keluhan' => $request->keluhan,
-		]);
-	// alihkan halaman ke halaman reservasi       
-		return redirect()->route('reservasi.index')
-			->with('success','Reservasi sedang diproses.');		
     }
 
     /**
@@ -68,8 +50,6 @@ class reservasiController extends Controller
     public function show($id)
     {
         //
-		$reservasi = DB::table('reservasi')->get();
-		return view('reservasi.view', compact('reservasi'));
     }
 
     /**
