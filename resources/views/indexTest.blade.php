@@ -12,7 +12,7 @@
             </div>
         </div>
 
-        <div class="program" style="margin-top:-200px">
+        <div class="program" style="margin-top:-100px">
             <h2 style="margin-bottom:30px;">Program Unggulan</h2>
             <div class="slider owl-carousel" style="padding: 20px;">
                 <div class="card mt-3 mb-3 pt-3 pb-3">
