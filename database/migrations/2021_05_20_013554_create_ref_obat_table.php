@@ -19,6 +19,7 @@ class CreateRefObatTable extends Migration
             $table->bigInteger('harga');
             $table->string('created_by');
             $table->string('edited_by');
+            $table->string('obat_img');
             $table->timestamps();
         });
     }

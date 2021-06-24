@@ -19,7 +19,9 @@ class CreateRefBhpTable extends Migration
             $table->bigInteger('harga');
             $table->string('created_by');
             $table->string('edited_by');
+            $table->string('img_dir');
             $table->timestamps();
+            
         });
     }
 
